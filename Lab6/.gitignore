@@ -1,1 +1,7 @@
-test
+# Compiled Object files
+*.o
+
+# Executables
+hello
+
+#ignore the executable created by running the make file, and ignore all .o files
