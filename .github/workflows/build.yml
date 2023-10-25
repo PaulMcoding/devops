@@ -13,13 +13,11 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
 
-      - name: change to right directory
-	run: cd ..
-	run: cd ..
-	run cd Lab6
-      - name: run makefile
+      - name: Change to the right directory
+        run: cd lab6   # Correct path to the Makefile
+
+      - name: Run Makefile
         run: make
 
-      - name: run executable
+      - name: Run Executable
         run: ./hello
-
