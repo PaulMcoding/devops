@@ -11,13 +11,16 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Change to the right directory
-        run: cd devops/lab6   # Correct path to the Makefile
+        run: cd lab6   # Navigate directly to the 'lab6' directory
 
       - name: List Files
         run: ls  # This command lists the files in the directory for debugging
 
       - name: Run Makefile
         run: make
+
+      - name: run executable
+        run: ./hello
