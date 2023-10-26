@@ -12,12 +12,4 @@ jobs:
 
       - name: Change to the right directory
         run: cd Lab6
-
-      - name: List Files
-        run: ls
-
-      - name: Run Makefile
-        run: make
-
-      - name: run executable
-        run: ./hello
+             make
